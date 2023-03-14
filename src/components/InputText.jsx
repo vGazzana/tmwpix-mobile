@@ -8,7 +8,12 @@ const InputText = ({onSubmit}) => {
     <Pressable
       android_ripple={{color: '#333'}}
       onPress={() => inputRef.current.focus()}>
-      <TextInput ref={inputRef} onSubmitEditing={onSubmit} />
+      <TextInput
+        className={'m-2 h-[46] w-[250px] rounded bg-slate-100 text-center'}
+        placeholder={'TOKEN'}
+        ref={inputRef}
+        onSubmitEditing={onSubmit}
+      />
     </Pressable>
   );
 };

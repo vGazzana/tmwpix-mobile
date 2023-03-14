@@ -17,8 +17,8 @@ const Routes = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Home" component={Login} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Home" component={Profile} />
+        <Stack.Screen name="Profile" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
   );
