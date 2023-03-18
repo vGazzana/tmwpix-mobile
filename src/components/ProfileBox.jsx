@@ -4,13 +4,14 @@ import React from 'react';
 const ProfileBox = () => {
   return (
     <Pressable
-      android_ripple={{color: '#f1f1f100', radius: 94}}
-      className={
-        'mx-1 flex h-[140] w-[130] items-center justify-start  px-[10] py-3'
-      }>
+      android_ripple={{color: '#444', radius: 88}}
+      className={'mx-1 flex h-[140] w-[110] items-center justify-start py-2'}
+      onHoverIn={() => {
+        console.log('Hovered?');
+      }}>
       <View
         className={
-          'mb-2 aspect-square h-[85] items-center overflow-hidden rounded-full border-2 border-black'
+          'mb-2 aspect-square h-[85] items-center overflow-hidden rounded-md border-2 border-black'
         }>
         <Image
           className={'h-full w-full'}
@@ -19,7 +20,10 @@ const ProfileBox = () => {
           }}
         />
       </View>
-      <Text className={'text-center capitalize text-white'}>
+      <Text
+        className={
+          'w-full bg-emerald-400/30 text-center capitalize text-white'
+        }>
         antonio samuel
       </Text>
     </Pressable>

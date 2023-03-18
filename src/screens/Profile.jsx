@@ -13,12 +13,12 @@ const Profile = () => {
         <Text className={'my-4 text-xl font-bold text-white'}>
           Quem esta assistindo?
         </Text>
-        <View className={'flex flex-row'}>
-          {[...Array(5)].map(item => (
-            <ProfileBox key={item} />
+        <View className={'flex flex-row flex-wrap items-center justify-center'}>
+          {[...Array(5)].map((item, index) => (
+            <ProfileBox key={index} />
           ))}
         </View>
-        <View className={'flex flex-row'}>
+        <View className={'flex flex-row flex-wrap items-center justify-center'}>
           <Button text={'Adicionar Perfil'} />
           <Button text={'Gerenciar Perfis'} />
         </View>
